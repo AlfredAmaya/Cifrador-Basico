@@ -1,0 +1,74 @@
+
+     .grid_principal{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas:"input input input output"
+                            "input input input output"
+                            "input input input output"
+                            "control control control output";
+        grid-gap: 2px;
+     }
+
+
+
+     .grid_principal #Input_Block{
+        grid-column:1/4 ;
+        grid-row: 1/4;
+        grid-area: input;
+        
+        
+        
+
+    }
+    
+    .grid_principal #control_Block{
+        grid-column:1/4 ;
+        grid-row: 4/5;
+        grid-area: control;
+        
+    }
+    
+    .grid_principal #Output_Block{
+        grid-column:4/5 ;
+        grid-row: 1/4;
+        grid-area: output;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 850px) {
+        .grid_principal{
+            height: 150vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(9,1fr);
+            grid-template-areas: "input" "input" "input" "input""control" "output" "output" "output" "output";
+            grid-gap: 2px;
+        }
+
+        #Input_Block{
+            grid-column: 1/2;
+            grid-row: 1/5;
+            grid-area: input;
+            
+        }
+        #contro_Block{
+            grid-column: 1/2;
+            grid-row: 5/6;
+            grid-area: control;
+        }
+        #Output_Block{
+            grid-column: 1/2;
+            grid-row: 6/10;
+            grid-area: output;
+        }
+    }
+

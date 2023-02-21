@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta>
+        <meta charset="UTF-8">
+        <title>Challenge Encriptador</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/Encriptador_Stylesheet.css">
+        <link rel="stylesheet" href="styles/grid-structure.css">
+        <link rel="stylesheet" href="styles/Botones.css">
+        <link rel="stylesheet" href="styles/scrollbars.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <div class="" id="">
+        <div class="grid_principal">
+            <div class="bloques_principales" id="Input_Block">
+                <h2 class="mi_titulo">Cifrador Basico</h2>
+                <textarea id="textarea_input" name="input" placeholder="Escribe o Pega aqui el codigo que deseas descifrar"></textarea>
+            </div>
 
+            <div class="bloques_principales" id="control_Block">
+                <h5 id="advertencia">Solo letras <strong>minusculas</strong> y sin acentos</h5>
+                <button type="button" class="boton" id="boton_descifrar">Descifrar</button>
+                <button type="button" class="boton" id="boton_cifrar">Cifrar</button>
+            </div>
+            
+            <div class="bloques_principales" id="Output_Block">
+                
+                <div  id="card">
+                    <h5 id="titulo_salida">Area de Salidad</h5> 
+                    <div id="Output_area">
+                        <img src="/images/cypher.svg" id="imagen_output">
+                        <textarea id="textarea_output" name="output" readonly="true"></textarea> 
+                    </div>
+                    <button type="button" class="boton" id="boton_copiar">Copiar</button>
+                    
+                </div>
+            </div>
+            
         </div>
-        <div class="" id="">
-
-        </div>
-        <div class="" id="">
-
-        </div>
+        <script type="text/javascript" src="Cypher.js"></script> 
     </body>
     <footer>
 
